@@ -13,7 +13,25 @@
 		9FA441791D5B45EC009896E1 /* ApproveSolman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA441771D5B45EC009896E1 /* ApproveSolman.xcdatamodeld */; };
 		9FA4417B1D5B45EC009896E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4417A1D5B45EC009896E1 /* Assets.xcassets */; };
 		9FA4417E1D5B45EC009896E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4417C1D5B45EC009896E1 /* LaunchScreen.storyboard */; };
+		9FD95EEA1D5B4A3B002C357F /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD95EE91D5B4A3B002C357F /* Freddy.framework */; };
+		9FD95EEB1D5B4A3B002C357F /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD95EE91D5B4A3B002C357F /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FD95EF41D5B4B5C002C357F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD95EF31D5B4B5C002C357F /* SwiftyJSON.swift */; };
+		9FD95EF81D5B583E002C357F /* CfinACCSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD95EF71D5B583E002C357F /* CfinACCSet.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FD95EEC1D5B4A3B002C357F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FD95EEB1D5B4A3B002C357F /* Freddy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9FA4416D1D5B45EC009896E1 /* ApproveSolman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApproveSolman.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,9 @@
 		9FA4417A1D5B45EC009896E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA4417D1D5B45EC009896E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA4417F1D5B45EC009896E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD95EE91D5B4A3B002C357F /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		9FD95EF31D5B4B5C002C357F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9FD95EF71D5B583E002C357F /* CfinACCSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CfinACCSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD95EEA1D5B4A3B002C357F /* Freddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +62,8 @@
 		9FA441641D5B45EC009896E1 = {
 			isa = PBXGroup;
 			children = (
+				9FD95EF71D5B583E002C357F /* CfinACCSet.swift */,
+				9FD95EE91D5B4A3B002C357F /* Freddy.framework */,
 				9FA4416F1D5B45EC009896E1 /* ApproveSolman */,
 				9FA4416E1D5B45EC009896E1 /* Products */,
 			);
@@ -56,6 +80,7 @@
 		9FA4416F1D5B45EC009896E1 /* ApproveSolman */ = {
 			isa = PBXGroup;
 			children = (
+				9FD95EF31D5B4B5C002C357F /* SwiftyJSON.swift */,
 				9FA441701D5B45EC009896E1 /* AppDelegate.swift */,
 				9FA441721D5B45EC009896E1 /* ViewController.swift */,
 				9FA441741D5B45EC009896E1 /* Main.storyboard */,
@@ -77,6 +102,7 @@
 				9FA441691D5B45EC009896E1 /* Sources */,
 				9FA4416A1D5B45EC009896E1 /* Frameworks */,
 				9FA4416B1D5B45EC009896E1 /* Resources */,
+				9FD95EEC1D5B4A3B002C357F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +125,7 @@
 				TargetAttributes = {
 					9FA4416C1D5B45EC009896E1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JP8T8ZDVB3;
 					};
 				};
 			};
@@ -141,6 +168,8 @@
 				9FA441731D5B45EC009896E1 /* ViewController.swift in Sources */,
 				9FA441791D5B45EC009896E1 /* ApproveSolman.xcdatamodeld in Sources */,
 				9FA441711D5B45EC009896E1 /* AppDelegate.swift in Sources */,
+				9FD95EF41D5B4B5C002C357F /* SwiftyJSON.swift in Sources */,
+				9FD95EF81D5B583E002C357F /* CfinACCSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +284,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ApproveSolman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = poncikapps.ApproveSolman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -266,10 +302,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ApproveSolman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = poncikapps.ApproveSolman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -292,6 +335,7 @@
 				9FA441841D5B45EC009896E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
